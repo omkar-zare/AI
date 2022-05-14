@@ -1,0 +1,104 @@
+/*
+bike(bajaj,100).
+bike (honda,200).
+Company(bajaj).
+Company(honda).
+showroom(bajaj,Pune).
+showroom(honda,Pune).
+
+likes(Akshay,KTM)
+-------------------------------------
+sum(X,Y,Z):- Z is X+Y.
+subt(X,Y,Z):- Z is X-Y.
+multi(X,Y,Z):- Z is X*Y.
+div(X,Y,Z):- Z is X/Y.
+modl(X,Y,Z):- Z is X mod Y.
+fmax(X,Y,X):- X>Y,!.
+fmax(X,Y,Y):- X<Y.
+fmin(X,Y,X):- X<Y,!.
+fmin(X,Y,Y):- X>Y.
+
+Sum(2,3,Z).
+div(2,3,Z).
+---------------------------------------
+
+class(fy,it).
+class(sy, it).
+class(ty, it).
+college(rscoe).
+city(rscoe, pune).
+state(rscoe, mh).
+branch(it, rscoe).
+branch(cs, rscoe).
+branch(etc, rscoe).
+branch(civil, rscoe).
+branch(mech, rscoe).
+subject(fy, cpp).
+subject(sy, ds).
+subject(ty, ai).
+
+location(X,Y):- city(C,X), state(C,Y).
+learns(X,Y):- class(C,X), subject(C,Y).
+-------------------------------------------
+
+studies(charlie, csc135).
+studies(olivia, csc135).
+studies(jack, csc131).  
+studies(arthur, csc134).
+
+teaches(kirke, csc135).  
+teaches(collins, csc131). 
+teaches(collins, csc171). 
+teaches(juniper, csc134).
+
+professor(X, Y) :- teaches(X, C), studies(Y, C).
+
+Q : 
+-------------------------------------------
+
+studies(charlie, What).
+What = csc135
+learns(ds, sy)
+false
+learns(it, ds)
+1true
+learns(fy, cpp)
+false
+location(pune, mh)
+1true
+learns(it, cpp)
+1true
+location(rscoe, What).
+false
+state(rscoe, What).
+What = mh
+branch(civil, What).
+What = rscoe
+branch(What, rscoe).
+What = it
+What = cs
+What = etc
+What = civil
+What = mech
+class(What, it).
+What = fy
+What = sy
+What = ty
+city(rscoe, What).
+What = pune
+
+city(rscoe, What).
+--------------------------------------------
+
+find_max(X,Y,X):- X>Y,!.
+find_max(X,Y,Y):- X<Y.
+find_min(X,Y,X):- X<Y,!.
+find_min(X,Y,Y):- X>Y.
+
+find_max(100,200,MAX)
+//MAX = 200           output
+find_min(100,200,MIN)
+//MIN = 100           output
+
+----------------------------------------------------
+*/
